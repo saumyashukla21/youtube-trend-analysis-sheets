@@ -3,30 +3,28 @@
 
 An end-to-end analytics project built entirely in Google Sheets from raw data cleaning to an interactive KPI dashboard analyzing what drives views vs. engagement across content categories, publish days, and channels in India's YouTube trending data.
 
-**[View the live dashboard →](PASTE_YOUR_SHAREABLE_SHEET_LINK_HERE)**
+**[View the live dashboard](https://docs.google.com/spreadsheets/d/1eHrM18mCumhuzPKRoGN0Au7XEy96TtxBlNxqlKjsAQg/edit?usp=sharing)**
 
 ---
 
 ## Dashboard Preview
 
-![Dashboard Screenshot](dashboard-screenshot.png)
-
-*(Replace `dashboard-screenshot.png` with your actual uploaded screenshot filename)*
+![Dashboard Screenshot](Youtube-Trend-Analysis-Dashboard.png)
 
 ---
 
 ## Overview
 
-This project analyzes 37,000+ trending YouTube videos from India (Kaggle's "Trending YouTube Video Statistics" dataset) to answer a core question: **does the content that gets the most views also drive the most engagement — and what does that mean for publishing strategy?**
+This project analyzes 37,000+ trending YouTube videos from India (Kaggle's "Trending YouTube Video Statistics" dataset) to answer a core question: **does the content that gets the most views also drive the most engagement and what does that mean for publishing strategy?**
 
-The entire workflow — data cleaning, transformation, analysis, hypothesis testing, and dashboard design — was built natively in Google Sheets, without external BI tools.
+The entire workflow data cleaning, transformation, analysis, hypothesis testing, and dashboard design was built natively in Google Sheets, without external BI tools.
 
 ---
 
 ## Tools & Skills Used
 
 - **VLOOKUP** — mapped raw numeric category IDs to readable category names via a lookup table
-- **QUERY** — replicated SQL-style `GROUP BY` / `ORDER BY` aggregation for category- and weekday-level analysis
+- **QUERY** — replicated SQL-style `GROUP BY` / `ORDER BY` aggregation for category and weekday-level analysis
 - **Pivot Tables** — cross-checked QUERY results and powered dashboard charts
 - **CORREL()** — tested statistical relationships (title length vs. views, like ratio vs. engagement rate)
 - **Conditional Formatting** — color-scaled views column to surface top/bottom performers at a glance
@@ -48,22 +46,23 @@ The entire workflow — data cleaning, transformation, analysis, hypothesis test
 
 ## Key Insights
 
-- Gaming leads in average views while Science & Technology leads in average engagement rate — showing that a category driving more views doesn't necessarily drive the most engagement.
-- Thursday shows the highest average engagement rate, followed by Friday — possibly because these are pre-weekend days when viewers seek out content, though this would need further data to confirm. Notably, Wednesday has the highest average views, showing that peak viewership and peak engagement don't always align.
-- Entertainment has the highest video volume, while Science & Technology sits at the bottom (1.46%) among the top 10 categories — yet it shows a notably higher engagement rate, suggesting smaller categories may retain more engaged, niche audiences.
-- T-Series dominates the channel leaderboard with over 2 billion total views — driven by consistent, frequent trending appearances rather than a single viral video.
-- Like ratio and engagement rate show a positive but moderate correlation (r = 0.35), suggesting well-received videos tend to generate somewhat more engagement, though the two aren't the same thing.
-- Saturday and Sunday show among the lowest average views and engagement rates of the week — contrary to the assumption that weekend leisure time would boost video performance.
-- Title length showed virtually no correlation with views (r = -0.05), indicating that other factors — category, timing, thumbnail — likely matter far more than how long a title is.
+- Gaming leads in average views while Science & Technology leads in average engagement rate. This shows it is not necessary that a category driving more views drive the most engagement rate.
+- Thursday has highest avg engagement rate followed by Friday, possible because these are pre-weekend days seeking content though it needs further data to confirm this. However, it is also notable that the highest avg view day is Wednesday. This shows peak viewership and engagement do not always align.
+- Entertainment Category has the highest video volume, while Science & Technology is at the bottom (1.46%) category in Top 10 but it shows notably higher engagement rate suggesting smaller categories has high retention rate due to niche audiences.
+- T-series is dominating the channel leaderboard by total views with more than 2Billions, suggesting that it has more trending appearances rather than one single viral video
+- Like ratio and engagement rate shows positive but moderate correlation (r=0.35). It suggests that well-received videos (most liked videos) tend to generate more engagement as well.
+- Saturday and Sunday show among the lowest average views, and engagement rate of the week, contrary to an assumption that weekend leisure time will boost the video performance and virality.
+
 
 ## Recommendations
 
-- Gaming and Entertainment are the strongest choices for maximizing reach, as they consistently draw the highest average views.
-- For community/loyalty, explore less-saturated categories like Science & Technology, which show higher engagement rates despite smaller audiences.
-- Creators should decide which metric matters most to them before choosing a publish day, since peak viewership and peak engagement fall on different days.
-- Given Entertainment's 44.7% share of trending videos, it's worth tracking category concentration over time to assess whether this reflects a structural or algorithmic bias.
-- For channel growth, consider consistent, high-frequency publishing (as demonstrated by T-Series) rather than relying on a single viral video.
-- Track engagement rate and like ratio separately, as they show only a moderate correlation — a video can be well-liked without necessarily having a higher engagement rate.
+- Prioritizing Gaming & Entertainment Category would more profitable if one wants reach as they consistently draw the highest average views.
+- For Community/Loyalty, one should explore less-saturated categories like Science & Technology as it has higher engagement rates, suggesting that it has a smaller but more invested audience.
+- Creators should decide which metrics matter to them more before deciding publish date because peak engagement and peak viewership have different days.
+- As entertainment has 44.7% share of trending videos, it worth tracking category concentration over time to look if its structural bias or algorithmic in what gets promoted to trending.
+- For Channel growth, one should consider consistent high frequency publishing (as demonstrated by T-Series) rather than relying on one viral video.
+- Tracking engagement rate and like ratio separately as they have moderate correlation, it shows the possibility that a video might be well-liked but might not have higher engagement rate.
+
 
 ---
 
