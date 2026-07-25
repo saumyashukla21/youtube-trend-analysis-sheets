@@ -9,7 +9,7 @@ An end-to-end analytics project built entirely in Google Sheets from raw data cl
 
 ## Dashboard Preview
 
-![Dashboard Screenshot](Youtube-Trend-Analysis-Dashboard.png)
+![Dashboard Screenshot](Youtube%20Trend%20Analysis%20Dashboard.png)
 
 ---
 
